@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alla Sostra | Ristorante a Dervio, Lago di Como</title>
-    <meta name="description" content="Alla Sostra: ristorante sul lungolago di Dervio. Specialità pesce di lago, risotto al pesce persico e cucina tipica valtellinese. Asporto e consumazione sul posto." />
+    <title>Alla Sostra | L'Anima del Lario a Dervio</title>
+    <meta name="description" content="Ristorante Alla Sostra sul lungolago di Dervio. Un viaggio culinario tra i sapori del Lago di Como e la tradizione valtellinese." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-container">
-        <a href="#" class="logo">Alla Sostra</a>
+        <a href="#" class="logo">
+          <span class="logo-text">Alla Sostra</span>
+          <span class="logo-sub">Dervio • Lago di Como</span>
+        </a>
         <div class="nav-links">
           <a href="#home">Home</a>
-          <a href="#menu">Il Menu</a>
-          <a href="#about">Chi Siamo</a>
-          <a href="#contact">Contatti</a>
+          <a href="#storia">La Nostra Storia</a>
+          <a href="#menu">Il Menù</a>
+          <a href="#contatti">Contatti</a>
         </div>
         <button class="mobile-menu-btn" aria-label="Menu">
           <span></span>
@@ -29,119 +32,205 @@
     </nav>
 
     <main>
+      <!-- Hero Section with Water Effect -->
       <header id="home" class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content fade-in">
-          <h1>Alla Sostra</h1>
-          <p class="subtitle">Il sapore autentico del Lago di Como e della Valtellina a Dervio.</p>
-          <a href="#menu" class="btn btn-primary">Scopri il Menu</a>
+        <div class="hero-content">
+          <p class="pre-title fade-up">Un respiro sul Lario</p>
+          <h1 class="fade-up delay-1">Alla Sostra</h1>
+          <p class="subtitle fade-up delay-2">Dove il sapore del pesce persico incontra il vento del Lago di Como, a pochi passi dall'acqua.</p>
+          <div class="hero-buttons fade-up delay-3">
+            <a href="#menu" class="btn btn-primary">Scopri il Menù</a>
+            <a href="#contatti" class="btn btn-outline">Prenota Ora</a>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
         </div>
       </header>
 
-      <section id="about" class="section about-section">
-        <div class="container fade-in">
-          <div class="about-grid">
-            <div class="about-text">
-              <h2>Tradizione e Gusto</h2>
-              <p>Situato sul pittoresco lungolago di Dervio, in Via alla Darsena, Alla Sostra è il luogo ideale per assaporare le vere specialità locali. Che tu voglia goderti un pasto rilassante vista lago o un comodo take-away, la nostra cucina saprà conquistarti.</p>
-              <p>Dalle nostre specialità di lago come il celebre <strong>Risotto al pesce persico</strong> e le <strong>tagliatelle al ragù di lago</strong>, fino ai grandi classici della tradizione valtellinese come i <strong>Pizzoccheri</strong> e gli <strong>Sciatt</strong>.</p>
-            </div>
-            <div class="about-image-wrapper">
-              <img src="https://images.unsplash.com/photo-1549427387-a3a830af2df1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vista del lago di Como" class="about-image">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="menu" class="section menu-section">
-        <div class="container fade-in">
-          <div class="section-header text-center">
-            <h2>Le Nostre Specialità</h2>
-            <p>Preparate con passione e ingredienti di prima scelta</p>
-          </div>
-          <div class="menu-grid">
-            <div class="menu-card">
-              <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1596645367610-18e381ebfbc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')"></div>
-              <div class="menu-card-content">
-                <h3>Specialità di Lago</h3>
-                <ul class="menu-list">
-                  <li>
-                    <span class="dish">Risotto al Pesce Persico</span>
-                    <span class="description">Un classico intramontabile del Lario</span>
-                  </li>
-                  <li>
-                    <span class="dish">Tagliatelle al Ragù di Lago</span>
-                    <span class="description">Pasta fresca con sugo saporito di pesce di lago</span>
-                  </li>
-                  <li>
-                    <span class="dish">Grigliata Mista di Lago</span>
-                    <span class="description">Il meglio del pescato locale alla griglia</span>
-                  </li>
-                </ul>
+      <!-- La Storia Section (Lake Vibe) -->
+      <section id="storia" class="section split-section">
+        <div class="container">
+          <div class="split-grid">
+            <div class="split-image-wrapper reveal-left">
+              <div class="image-mask">
+                <img src="https://images.unsplash.com/photo-1596645367610-18e381ebfbc6?auto=format&fit=crop&w=800&q=80" alt="Lago di Como Dervio">
+              </div>
+              <div class="floating-badge">
+                <span class="badge-number">17B</span>
+                <span class="badge-text">Via alla<br>Darsena</span>
               </div>
             </div>
-            
-            <div class="menu-card">
-              <div class="menu-card-img" style="background-image: url('https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')"></div>
-              <div class="menu-card-content">
-                <h3>Tradizione Valtellinese</h3>
-                <ul class="menu-list">
-                  <li>
-                    <span class="dish">Pizzoccheri della Valtellina</span>
-                    <span class="description">Pasta di grano saraceno con formaggio, patate e verza</span>
-                  </li>
-                  <li>
-                    <span class="dish">Sciatt</span>
-                    <span class="description">Frittelle croccanti dal cuore di formaggio fuso</span>
-                  </li>
-                  <li>
-                    <span class="dish">Polenta Taragna</span>
-                    <span class="description">Polenta scura con formaggio locale e burro</span>
-                  </li>
-                </ul>
-              </div>
+            <div class="split-text reveal-right">
+              <h2 class="section-title">Onde di Gusto <br><span>sulle Rive di Dervio</span></h2>
+              <div class="title-separator"></div>
+              <p class="lead-text">Un rifugio per chi ama il lago autentico. Accarezzati dalla brezza e con lo sguardo perso nel blu del Lario.</p>
+              <p>Alla Sostra non è solo un ristorante, è un'esperienza sensoriale. Dalla freschezza del nostro pescato locale, come il celebre risotto al pesce persico, fino all'abbraccio caldo della cucina valtellinese con i pizzoccheri filanti.</p>
+              <ul class="features-list">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span>Materia Prima d'Eccellenza</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  <span>Sapore Autentico del Lario</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/></svg>
+                  <span>Asporto e Consumazione sul Posto</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact-section">
-        <div class="container fade-in">
-          <div class="contact-grid">
-            <div class="contact-info">
-              <h2>Vieni a Trovarci</h2>
-              <div class="info-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <p><strong>Indirizzo:</strong><br>Via alla Darsena, 17 B<br>23824 Dervio (LC), Italia</p>
+      <!-- Il Menu (Elegant Cards) -->
+      <section id="menu" class="section menu-section dark-bg">
+        <!-- Decorazione Onda SVG -->
+        <div class="wave-top">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#F8F9FA"></path>
+          </svg>
+        </div>
+        
+        <div class="container relative z-10">
+          <div class="section-header text-center reveal-up">
+            <h2 class="section-title text-light">Il Nostro Menù</h2>
+            <div class="title-separator mx-auto"></div>
+            <p class="text-light-muted">Lasciati trasportare dai profumi del lago e delle montagne circostanti.</p>
+          </div>
+
+          <div class="menu-showcase">
+            <div class="menu-card reveal-up">
+              <div class="menu-card-image">
+                <img src="https://images.unsplash.com/photo-1549427387-a3a830af2df1?auto=format&fit=crop&w=600&q=80" alt="Pesce di Lago">
+                <div class="menu-card-overlay">
+                  <h3>Il Lario</h3>
+                </div>
               </div>
-              <div class="info-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <p><strong>Telefono:</strong><br><a href="tel:+393667424992">+39 366 742 4992</a></p>
-              </div>
-              <div class="info-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <p><strong>Email:</strong><br><a href="mailto:allasostradervio@gmail.com">allasostradervio@gmail.com</a></p>
-              </div>
-              <div class="hours">
-                <h3>Orari di Apertura</h3>
-                <p><strong>Lun - Mer:</strong> Chiuso</p>
-                <p><strong>Gio - Dom:</strong> 11:30 – 14:00 / 18:30 – 21:00</p>
-                <p class="note">Disponibile Asporto e Consumazione sul posto.</p>
+              <div class="menu-card-body">
+                <div class="menu-item">
+                  <div class="menu-item-header">
+                    <h4>Risotto al Pesce Persico</h4>
+                  </div>
+                  <p>Il re indiscusso del lago, mantecato a regola d'arte.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item-header">
+                    <h4>Tagliatelle al Ragù di Lago</h4>
+                  </div>
+                  <p>Pasta fresca trafilata avvolta dai sapori del pescato locale.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item-header">
+                    <h4>Grigliata Mista di Lago</h4>
+                  </div>
+                  <p>Lavarello, agone e altre bontà, dorate sulla griglia.</p>
+                </div>
               </div>
             </div>
-            <div class="contact-map">
-              <div class="map-placeholder">
-                <img src="https://images.unsplash.com/photo-1582236166418-47bc6ee4bc69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lake Como Dervio view" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+
+            <div class="menu-card reveal-up delay-2">
+              <div class="menu-card-image">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Valtellina">
+                <div class="menu-card-overlay">
+                  <h3>La Valtellina</h3>
+                </div>
               </div>
+              <div class="menu-card-body">
+                <div class="menu-item">
+                  <div class="menu-item-header">
+                    <h4>Pizzoccheri</h4>
+                  </div>
+                  <p>La tradizione scura e filante, ricca di burro d'alpeggio, formaggio Casera e verza.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item-header">
+                    <h4>Sciatt su Letto di Cicoria</h4>
+                  </div>
+                  <p>Sfere croccanti di grano saraceno dal cuore di formaggio fuso.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-item-header">
+                    <h4>Polenta Taragna</h4>
+                  </div>
+                  <p>Oro scuro fumante, perfetta per accompagnare le fresche serate lariane.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wave-bottom">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V0C1132.19,23.09,1055.71,74.35,985.66,92.83Z" fill="#F8F9FA"></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Contatti -->
+      <section id="contatti" class="section contact-section">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-info reveal-left">
+              <h2 class="section-title">Raggiungici in<br>Riva al Lago</h2>
+              <div class="title-separator"></div>
+              
+              <div class="info-blocks">
+                <div class="info-block">
+                  <div class="icon-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <h5>Indirizzo</h5>
+                    <p>Via alla Darsena, 17 B<br>23824 Dervio (LC)</p>
+                  </div>
+                </div>
+
+                <div class="info-block">
+                  <div class="icon-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <h5>Telefono</h5>
+                    <p><a href="tel:+393667424992" class="hover-link">+39 366 742 4992</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hours-card">
+                <h4>Orari di Apertura</h4>
+                <div class="hours-row">
+                  <span>Lunedì - Mercoledì</span>
+                  <span>Chiuso</span>
+                </div>
+                <div class="hours-row">
+                  <span>Giovedì - Domenica</span>
+                  <span>11:30 - 14:00<br>18:30 - 21:00</span>
+                </div>
+                <div class="hours-note">Disponibile Asporto e Consumazione sul posto</div>
+              </div>
+            </div>
+
+            <div class="contact-image reveal-right">
+               <img src="https://images.unsplash.com/photo-1582236166418-47bc6ee4bc69?auto=format&fit=crop&w=800&q=80" alt="Dervio Lago di Como" class="lake-view-img">
+               <div class="image-border"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container text-center">
-        <p>&copy; <span id="year"></span> Alla Sostra Dervio. Tutti i diritti riservati.</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Alla Sostra</div>
+          <p class="footer-motto">Sapore di Lago, Cuore di Valtellina</p>
+          <p class="footer-copy">&copy; <span id="year"></span> Alla Sostra. Tutti i diritti riservati.</p>
+        </div>
       </div>
     </footer>
 
